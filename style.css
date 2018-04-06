@@ -1,0 +1,190 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 150px auto 350px;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: 
+    "logo header header"
+    "main main section"
+    "footer footer footer";
+  grid-gap: 10px;
+  min-height: 100vh;
+}
+ 
+  /*Header section*/
+
+/* starts from 17 line in HTML*/
+
+.header{
+  grid-area: header;
+  text-align: right;
+  box-shadow: 0 3px #ededed;
+}
+
+.header_image {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 10px 0 0 10px;
+}
+
+.header_text {
+  margin: 20px 20px;
+  color: #459fc9;
+  padding: 5px;
+  font-family: 'Merienda', cursive;
+}
+
+  /*Main section*/
+
+  /* starts from 29 line in HTML*/
+
+.main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background-image: url(images/background.jpg);
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.project_text {
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 40px;
+}
+
+  /* starts from 33 line in HTML*/
+
+.animal_card {
+  text-align: center;
+  height: 300px;
+  width: 300px;
+}
+
+.animal_image {
+  height: 200px;
+  width: 200px;
+}
+
+.animal_text {
+  text-align: center;
+}
+
+  /*starts from 38 line in HTML*/
+
+.mockup { 
+  text-align: center;
+  height: 300px;
+  width: 300px;
+}
+
+.mockup_image {
+  height: 200px;
+  width: 380px;
+}
+
+.mockup_text {
+  text-align: center;
+  margin-left: 50px;
+}
+
+  /* starts from 43 line in HTML*/
+
+.pixel_maker {
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  margin-left: 55px;
+}
+
+.pixel_image {
+  height: 200px;
+  width: 200px;
+}
+
+.pixel_text {
+  text-align: center;
+}
+
+  /*'Section' section*/
+
+  /* starts from 52 line in HTML*/ 
+
+.section{
+  grid-area: section;
+  display: grid;
+  grid-template-columns: repeat(2, 10px);
+  margin: -10px 0px 0 0;
+}
+
+.section_logo {
+  display: grid;
+  grid-column: 10;
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  margin-top: 15px;
+}
+
+.section_header {
+  text-align: left;
+  color: #459fc9;
+  padding: 20px 0 0 20px;
+  font-size: 30px;
+}
+
+.section_text {
+  width: 300px;
+  grid-column: 2;
+}
+
+.my_text {
+  text-align: justify;
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
+}
+
+  /*Footer section*/
+
+  /* starts from 64 line in HTML*/ 
+
+.footer{
+  grid-area: footer;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  text-align: center;
+}
+
+.footer_image {
+  width: 50px;  
+  height: 50px;
+}
+
+.slack {
+  grid-column: 1;
+}
+
+.twitter {
+  grid-column: 2;
+}
+
+.email {
+  grid-column: 3;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
